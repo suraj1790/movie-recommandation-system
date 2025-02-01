@@ -1,0 +1,65 @@
+body{
+    background-color: rgb(10, 63, 63);
+    color: aliceblue;
+    
+    justify-items: center;
+}
+
+
+.main{
+    padding: 20px;
+    display: flex;
+    justify-items: center;
+    
+}
+
+#name{
+    width: 400px;
+    height: 40px;
+    font-size: 25px;
+    background-color: rgb(96, 133, 133);
+    border: 2px solid rgb(24, 22, 22);
+    border-radius: 15px;
+    margin: 0px 10px 50px 0px;
+
+}
+
+
+#submit-btn{
+    width: 150px;
+    height: 30px;
+    background-color: rgb(10, 57, 15);
+    font-size: 18px;
+    border: 2px solid red;
+    border-radius: 10px;
+    
+}
+
+.container{
+    justify-items: center;
+    width: 200px;
+    border: 1px solid rgb(84, 23, 23);
+    border-radius: 4px;
+    padding: 8px;
+    margin: 8px;
+    word-wrap: break-word;  
+    background-color: rgb(4, 38, 12);
+
+}
+
+.container img{
+    width: 180px;
+    border-radius: 5px;
+}
+.container p{
+    margin: 8px;
+}
+
+.title{
+    font-weight: 800;
+    font-size: 20px;
+    padding: 15px 0px;
+}
+#app_name{
+    margin: 40px;
+}

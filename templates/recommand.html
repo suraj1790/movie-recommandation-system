@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>recommand</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='recommander.css')}}" />
+  </head>
+  <body>
+    <form action="{{url_for('recommand')}}" method="POST">
+      <h1 id="title">Welcome to movie recommander system</h1>
+      <div class="inpt">
+        <h3>Enter movie name here--> </h3>
+        <input
+          type="text"
+          id="name"
+          name="movie"
+          placeholder="enter movie name"
+        />
+        <a href="error.html"><button id="submit-btn" type="submit">recommand</button></a>
+      </div>
+
+   <div class="rcmdr_title" >Go To Home Page ~~~>> <a href="/"><button class="rcmdr-page-btn">Press Here</button></a></div>
+
+
+    </form>
+
+    <div class="main">
+      {% if name %} {% for movie in name %}
+
+      <div class="container">
+        <div class="image"><img src="{{ movie[0] }}" alt="" /></div>
+
+        <p class="title">Title : {{ movie[1]}}</p>
+        <p class="rating">rating : {{ movie[3] }}</p>
+        <p class="year">year : {{ movie[2] }}</p>
+        <p>Duration : {{ movie[4] }}</p>
+      </div>
+
+      {% endfor %} {% endif %}
+    </div>
+  </body>
+</html>

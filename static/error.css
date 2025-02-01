@@ -1,0 +1,22 @@
+body{
+    
+    background-color: rgb(7, 26, 74);
+    margin: 20px;
+    padding: 50px;
+    justify-items: center;
+    color: aliceblue;
+    color: red;
+}
+
+button{
+    margin: 0px 10px;
+    padding: 5px 7px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+li{
+    margin: 20px;
+    color: aliceblue;
+}
